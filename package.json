@@ -1,0 +1,28 @@
+{
+  "name": "restify-normalize",
+  "version": "1.0.0",
+  "description": "Restify object map for a model",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sedinson/restify-normalize.git"
+  },
+  "keywords": [
+    "restify",
+    "knex",
+    "normalize"
+  ],
+  "author": "Edinson Salas <edinsonsalas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sedinson/restify-normalize/issues"
+  },
+  "homepage": "https://github.com/sedinson/restify-normalize#readme",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "lodash": "^4.17.11"
+  }
+}
