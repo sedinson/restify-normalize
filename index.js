@@ -19,7 +19,7 @@ module.exports = function (knex) {
         
                 for (var name in data) {
                     if(['null', 'undefined', undefined, null].indexOf(data[name]) >= 0) {
-                        data[name] = knex.raw("NULL");
+                        delete data[name];
                     } else {
                         //-- Si es un json, entonces convertir a texto
                         try {
