@@ -1,6 +1,6 @@
 {
   "name": "restify-normalize",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Restify object map for a model",
   "main": "index.js",
   "scripts": {
