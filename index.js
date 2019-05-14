@@ -17,7 +17,7 @@ module.exports = function (knex) {
 
                     knex.raw(`describe ${model}`).then(function (response) {
                         models[model] = response[0];
-                        cb(null, data);
+                        cb(null, models[model]);
                     }).catch(cb);
                 },
 
