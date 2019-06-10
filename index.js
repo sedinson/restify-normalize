@@ -7,7 +7,7 @@ var _ = require('lodash'),
 var models = {};
 
 module.exports = function (knex) {
-    return function (model, data) {
+    return function (model, data, includes) {
         return new Promise(function (resolve, reject) {
             async.waterfall([
                 function (cb) {
@@ -30,7 +30,7 @@ module.exports = function (knex) {
                         }
                     });
         
-                    data = _.pick(data || {}, _.map(rows, 'Field'));
+                    data = _.pick(data || {}, _.map(rows, 'Field').concat(includes));
 
                     for (var name in data) {
                         if(['null', 'undefined', undefined, null].indexOf(data[name]) >= 0) {
